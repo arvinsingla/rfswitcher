@@ -1,0 +1,15 @@
+{
+  "name": "rf-switcher",
+  "version": "0.0.1",
+  "description": "API to perform RF switching at 433Mhz frequency.",
+  "main": "switcher.js",
+  "scripts": {
+    "start": "node switcher.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
