@@ -31,4 +31,4 @@ app.get('/api/switch/:id', function (req, res){
 });
 
 // Launch server.
-app.listen(4242);
+app.listen(80);
