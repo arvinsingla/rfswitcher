@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Ikea tall lamp",
+        "on": 1398067,
+        "off": 1398076,
+        "status": 0
+    },
+    {
+        "id": 2,
+        "name": "Bunny lamp",
+        "on": 1398211,
+        "off": 1398220,
+        "status": 0
+    },
+    {
+        "id": 3,
+        "name": "Ikea table lamp",
+        "on": 1398531,
+        "off": 1398540,
+        "status": 0
+    },
+    {
+        "id": 4,
+        "name": "Heart",
+        "on": 4281651,
+        "off": 4281660,
+        "status": 0
+    },
+    {
+        "id": 5,
+        "name": "Left bedside lamp",
+        "on": 4281795,
+        "off": 4281804,
+        "status": 0
+    },
+    {
+        "id": 6,
+        "name": "Right bedside lamp",
+        "on": 4282115,
+        "off": 4282124,
+        "status": 0
+    },
+    {
+        "id": 7,
+        "name": "Blue table lamp",
+        "on": 5330227,
+        "off": 5330236,
+        "status": 0
+    },
+    {
+        "id": 8,
+        "name": "Right shelf lamp",
+        "on": 5330371,
+        "off": 5330380,
+        "status": 0
+    },
+    {
+        "id": 9,
+        "name": "Left shelf lamp",
+        "on": 5330691,
+        "off": 5330700,
+        "status": 0
+    },
+    {
+        "id": 10,
+        "name": "Christmas tree",
+        "on": 5332227,
+        "off": 5332236,
+        "status": 0
+    }
+]
