@@ -15,13 +15,14 @@ var findIndex = function(arr, key, value) {
       return i;
     }
   }
-  return null;
+  return;
 }
 
 var switchQueue = async.queue(function(req, callback) {
-  var onIndex = findIndex(devices, 'on', req);
-  var offIndex = findIndex(devices, 'off', req);
+  var onIndex = findIndex(devices, 'on', req.params.id);
+  var offIndex = findIndex(devices, 'off', req.params.id);
   exec('./' + executable + ' ' + req.params.id, callback);
+
   if (onIndex) {
     devices[onIndex].status = 1;
   }
@@ -41,7 +42,7 @@ app.get('/api/status', function (req, res) {
 // RF Switch API Endpoint.
 app.get('/api/status/:id', function (req, res){
   var index = findIndex(devices, 'id', req.params.id);
-  if (index !== null) {
+  if (index) {
     res.send(devices[index]['status'] + '');
   }
   else {
@@ -59,10 +60,10 @@ app.get('/api/switch/:id', function (req, res){
   console.log("Request: " + req.originalUrl);
 
   switchQueue.push(req, function (error, stdout, stderr) {
-      if (error !== null) {
-        return res.status(500, {error: 'something blew up'}).send('FAILED');
-      }
-      return res.status(200).send('SUCCESS');
+    if (error !== null) {
+      return res.status(500, {error: 'something blew up'}).send('FAILED');
+    }
+    return res.status(200).send('SUCCESS');
   });
 
 });
